@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./section.css";
+
 const Section = ({ title, description, navItems }) => {
   return (
     <section>
@@ -10,7 +12,11 @@ const Section = ({ title, description, navItems }) => {
       <nav className="section-nav">
         <ul>
           {navItems.map((item) => (
-            <li className="section-nav-item">{item}</li>
+            <li>
+              <a className="section-nav-item" href="#">
+                {item}
+              </a>
+            </li>
           ))}
         </ul>
       </nav>

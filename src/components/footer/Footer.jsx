@@ -2,9 +2,9 @@ import React from "react";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 
-import Logo from "../assets/img/cafeyn.svg";
+import Logo from "../../assets/img/cafeyn.svg";
 // import CafeynLogo from "../assets/img/cafeynLogo2.svg";
-import { navCategoriesFooter, languages } from "../assets/cafeyn.fixtures";
+import { navCategoriesFooter, languages } from "../../assets/cafeyn.fixtures";
 
 const Footer = () => {
   return (

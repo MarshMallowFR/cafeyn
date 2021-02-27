@@ -1,0 +1,135 @@
+header {
+  top: 0px;
+  display: inherit;
+  position: fixed;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-right-content > a {
+  color: #1e323d;
+  border-radius: 100px;
+  height: auto;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s, border 0.5s;
+  font-size: 0.625rem;
+  line-height: 0.625rem;
+  letter-spacing: 0.03125rem;
+  font-family: "Soleil-bold";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.button-login {
+  background-color: #fff;
+  border: 1px solid #ececec;
+}
+.button-register {
+  margin-left: 10px;
+  background-color: #fedc84;
+  border: 1px solid #fedc84;
+}
+
+.header-gift {
+  padding-right: 16px;
+  margin-right: 16px;
+  border-right: 1px solid #ececec;
+}
+
+.header-gift-link {
+  position: relative;
+  top: 0;
+  font-size: 1rem;
+  line-height: 2.25rem;
+  width: 38px;
+  height: 38px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid #ececec;
+  border-radius: 19px;
+  background-color: #fff;
+  transition: all 0.1s ease-out;
+  letter-spacing: 0;
+  padding: 7px 12px;
+}
+
+.header-logo {
+  width: 11%;
+  margin: 0 35px;
+}
+.header-logo > img {
+  width: 113px;
+}
+
+.header-main {
+  background-color: #fff;
+  border-bottom: 1px solid #ececec;
+  padding: 16px 0;
+  min-height: 70px;
+}
+
+.header-main-content {
+  position: relative;
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  width: calc(50% - 32px);
+  margin-left: 32px;
+  text-align: right;
+}
+
+.header-right-content {
+  position: relative;
+  top: 81px;
+  top: 0;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  background-color: #fff;
+  z-index: auto;
+  padding: 0;
+  transform: none;
+}
+
+.header-search {
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+  color: #536067;
+  font-size: 0.8125rem;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+  text-decoration: none;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  width: calc(33.33333% - 32px);
+  position: relative;
+}
+
+.header-search > p {
+  display: block;
+  line-height: 1.66rem;
+  padding-left: 16px;
+  padding-right: 40px;
+  font-size: 14px;
+  color: #536067;
+}
+
+.header-search-icon {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  right: 20px;
+}

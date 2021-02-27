@@ -1,12 +1,36 @@
 export const navCategoriesHeader = [
-  "accueil",
-  "quotidiens",
-  "actualités",
-  "people & tv",
-  "technologie",
-  "auto & moto",
-  "culture",
-  "savoirs",
+  {
+    category: "accueil",
+    link: "https://www.cafeyn.co/fr/newsstand",
+  },
+  {
+    category: "quotidiens",
+    link: "https://www.cafeyn.co/fr/newsstand/quotidiens",
+  },
+  {
+    category: "actualités",
+    link: "https://www.cafeyn.co/fr/newsstand/actualites",
+  },
+  {
+    category: "people & tv",
+    link: "https://www.cafeyn.co/fr/newsstand/people-et-tv",
+  },
+  {
+    category: "technologie",
+    link: "https://www.cafeyn.co/fr/newsstand/technologie",
+  },
+  {
+    category: "auto & moto",
+    link: "https://www.cafeyn.co/fr/newsstand/auto-et-moto",
+  },
+  {
+    category: "culture",
+    link: "https://www.cafeyn.co/fr/newsstand/culture",
+  },
+  {
+    category: "savoirs",
+    link: "https://www.cafeyn.co/fr/newsstand/savoirs",
+  },
 ];
 
 export const navCategoriesSection = [
