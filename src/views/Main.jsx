@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 import Header from "../components/header/Header";
@@ -8,13 +8,16 @@ import Footer from "../components/footer/Footer";
 import { navCategoriesSection } from "../assets/cafeyn.fixtures";
 
 const Main = ({ children }) => {
+  const [showHeader, setShowHeader] = useState(true);
+  // TODO
+  // penser à mettre l'icone dans l'onglet
+  // Taille police globale
+  // bordure bottom reste avec la nav et virer la border top de la section
   return (
     <>
-      <Header />
+      <Header showHeader={showHeader} setShowHeader={setShowHeader} />
       <div id="main-section">
-        {/* <div className="hightLight-content"></div> */}
-
-        <Nav />
+        <Nav showHeader={showHeader} />
         <Section
           title={"Quotidiens"}
           description={"L'actu très très chaud"}

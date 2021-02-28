@@ -1,0 +1,18 @@
+.thumbnail {
+  margin-top: 64px;
+  width: calc(16.66667% - 32px);
+  flex: 0 0 auto;
+  margin-left: 32px;
+}
+
+.thumbnail-link {
+  text-align: left;
+  line-height: normal;
+  position: relative;
+  cursor: pointer;
+}
+.thumbnail-link > img {
+  min-height: inherit;
+  background-color: transparent;
+  height: 239px;
+}

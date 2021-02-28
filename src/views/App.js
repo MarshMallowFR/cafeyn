@@ -1,11 +1,13 @@
-import "./App.css";
 import Main from "./Main";
+import Content from "../components/content/Content";
+
+import "./App.css";
 
 function App() {
   return (
     <div className="App-Root">
       <Main>
-        <div>Full content</div>
+        <Content />
       </Main>
     </div>
   );

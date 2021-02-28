@@ -1,17 +1,27 @@
 import React from "react";
 import { BsSearch } from "react-icons/bs";
+import PropTypes from "prop-types";
 
 import Button from "../button/Button";
 import Logo from "../../assets/img/cafeyn.svg";
 import GiftHeader from "../../assets/img/giftHeader.svg";
-import Search from "../../assets/img/lk-search.svg";
 
 import "./header.css";
 
-const Header = () => {
+const Header = ({ showHeader, setShowHeader }) => {
+  const handleHeaderDisplay = () => {
+    if (window.scrollY > 25) {
+      setShowHeader(false);
+    } else {
+      setShowHeader(true);
+    }
+  };
+
+  window.addEventListener("scroll", handleHeaderDisplay);
+
   return (
     <header>
-      <div className="header-main">
+      <div className={showHeader ? "header-main-active" : "header-main"}>
         <div className="header-main-content">
           <a className="header-logo" href="https://www.cafeyn.co/fr/newsstand">
             <img src={Logo} alt="logo cafeyn" />
@@ -19,7 +29,6 @@ const Header = () => {
           <a className="header-search" href="https://www.cafeyn.co/fr/search">
             <p>Rechercher un titre de presse ou un article</p>
             <BsSearch className="header-search-icon" />
-            {/* <img src={Search} alt="search" /> */}
           </a>
           <div className="header-right">
             <div className="header-gift">
@@ -47,6 +56,11 @@ const Header = () => {
       </div>
     </header>
   );
+};
+
+Header.propTypes = {
+  showHeader: PropTypes.bool.isRequired,
+  setShowHeader: PropTypes.func.isRequired,
 };
 
 export default Header;

@@ -11,6 +11,12 @@
   src: url("../assets/fonts/Soleil_Bold.ttf");
 }
 
+:root {
+  --cafeyn-grey-color: #536067;
+  --cafeyn-border-color: #ececec;
+  --cafeyn-loginRegister-color: #fedc84;
+}
+
 .App-Root {
   margin: 0;
   box-sizing: border-box;
