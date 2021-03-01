@@ -12,7 +12,6 @@ const Main = ({ children }) => {
   // TODO
   // penser à mettre l'icone dans l'onglet
   // Taille police globale
-  // bordure bottom reste avec la nav et virer la border top de la section
   return (
     <>
       <Header showHeader={showHeader} setShowHeader={setShowHeader} />

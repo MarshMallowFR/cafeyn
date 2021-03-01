@@ -46,6 +46,7 @@ const Footer = () => {
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_Google_play.jpg"
                   alt="logo-available-google"
+                  style={{ marginLeft: "25px" }}
                 />
               </a>
             </div>

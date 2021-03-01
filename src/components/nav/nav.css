@@ -29,19 +29,60 @@
 }
 .main-nav-content > a:nth-child(1):hover > .main-nav-item-bg {
   background-color: rgb(29, 115, 164);
-  opacity: 0.08;
+}
+.main-nav-content > a:nth-child(2):hover > .main-nav-item-text {
+  color: rgb(103, 131, 155);
+}
+.main-nav-content > a:nth-child(2):hover > .main-nav-item-bg {
+  background-color: rgb(103, 131, 155);
+}
+.main-nav-content > a:nth-child(3):hover > .main-nav-item-text {
+  color: rgb(89, 170, 199);
+}
+.main-nav-content > a:nth-child(3):hover > .main-nav-item-bg {
+  background-color: rgb(89, 170, 199);
+}
+.main-nav-content > a:nth-child(4):hover > .main-nav-item-text {
+  color: rgb(239, 154, 154);
+}
+.main-nav-content > a:nth-child(4):hover > .main-nav-item-bg {
+  background-color: rgb(239, 154, 154);
+}
+.main-nav-content > a:nth-child(5):hover > .main-nav-item-text {
+  color: rgb(136, 201, 195);
+}
+.main-nav-content > a:nth-child(5):hover > .main-nav-item-bg {
+  background-color: rgb(136, 201, 195);
+}
+.main-nav-content > a:nth-child(6):hover > .main-nav-item-text {
+  color: rgb(106, 89, 106);
+}
+.main-nav-content > a:nth-child(6):hover > .main-nav-item-bg {
+  background-color: rgb(106, 89, 106);
+}
+.main-nav-content > a:nth-child(7):hover > .main-nav-item-text {
+  color: rgb(183, 105, 76);
+}
+.main-nav-content > a:nth-child(7):hover > .main-nav-item-bg {
+  background-color: rgb(183, 105, 76);
+}
+.main-nav-content > a:nth-child(8):hover > .main-nav-item-text {
+  color: rgb(139, 26, 46);
+}
+.main-nav-content > a:nth-child(8):hover > .main-nav-item-bg {
+  background-color: rgb(139, 26, 46);
+}
+
+.main-nav-item-bg {
+  width: 100%;
+  display: block;
   height: 38px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.08;
   border-radius: 4px;
 }
-/* .main-nav-content > span:nth-child(1):hover {
-  background-color: rgb(29, 115, 164);
-  height: 38px;
-   position: absolute;
-  top: 0;
-  left: 0; 
-opacity: 0.08;
-  border-radius: 4px;
-}  */
 
 .main-nav-item {
   border-radius: 4px;
@@ -59,11 +100,6 @@ opacity: 0.08;
   font-family: Soleil-bold, Helvetica, sans-serif;
 }
 
-/* .main-nav-item:nth-child(1):hover {
-  color: red;
-  background-color: green;
-} */
-
 #main-nav-active {
   transition: width 0.5s ease-out;
   background-color: #fff;
@@ -72,6 +108,6 @@ opacity: 0.08;
   z-index: 2;
   width: 100%;
   left: 0;
-  top: 10px;
+  top: 0px;
   padding-right: 10px;
 }
