@@ -1,27 +1,27 @@
 #main-nav {
-  transition: width 0.5s ease-out;
   background-color: #fff;
   border-bottom: 1px solid var(--cafeyn-border-color);
-  position: fixed;
-  z-index: 2;
-  width: 100%;
   left: 0;
-  top: 110px;
   padding-right: 10px;
+  position: fixed;
+  top: 110px;
+  transition: width 0.5s ease-out;
+  width: 100%;
+  z-index: 2;
 }
 
 .main-nav-content {
-  width: 100%;
-  max-width: 1258px;
-  padding: 16px 24px;
+  align-items: center;
   background-color: #fff;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   list-style: none;
   margin: 0 30px;
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
+  max-width: 1258px;
+  padding: 16px 24px;
   overflow-x: auto;
-  justify-content: space-between;
+  width: 100%;
 }
 
 .main-nav-content > a:nth-child(1):hover > .main-nav-item-text {
@@ -73,41 +73,41 @@
   background-color: rgb(139, 26, 46);
 }
 
-.main-nav-item-bg {
-  width: 100%;
-  display: block;
-  height: 38px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.08;
-  border-radius: 4px;
-}
-
 .main-nav-item {
   border-radius: 4px;
+  color: var(--cafeyn-grey-color);
   cursor: pointer;
   display: inline-block;
-  position: relative;
-  padding: 8px 0;
   flex: 1 0 auto;
+  font-family: Soleil-bold, Helvetica, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.03125rem;
+  line-height: 1.125rem;
+  padding: 8px 0;
+  position: relative;
   text-align: center;
   text-transform: uppercase;
-  font-size: 12px;
-  line-height: 1.125rem;
-  letter-spacing: 0.03125rem;
-  color: var(--cafeyn-grey-color);
-  font-family: Soleil-bold, Helvetica, sans-serif;
+}
+
+.main-nav-item-bg {
+  border-radius: 4px;
+  display: block;
+  height: 38px;
+  left: 0;
+  opacity: 0.08;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 #main-nav-active {
-  transition: width 0.5s ease-out;
   background-color: #fff;
   border-bottom: 1px solid var(--cafeyn-border-color);
-  position: fixed;
-  z-index: 2;
-  width: 100%;
   left: 0;
-  top: 0px;
   padding-right: 10px;
+  position: fixed;
+  top: 0px;
+  transition: width 0.5s ease-out;
+  width: 100%;
+  z-index: 2;
 }

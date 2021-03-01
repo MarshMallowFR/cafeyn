@@ -3,11 +3,11 @@
 }
 
 .main-content-grid {
-  display: flex;
   align-items: center;
-  padding: 0 32px 0 0;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1274px;
   margin: 0 auto;
+  max-width: 1274px;
+  padding: 0 32px 0 0;
 }

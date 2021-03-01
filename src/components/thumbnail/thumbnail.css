@@ -1,8 +1,8 @@
 .thumbnail {
-  margin-top: 64px;
-  width: calc(16.66667% - 32px);
   flex: 0 0 auto;
   margin-left: 32px;
+  margin-top: 64px;
+  width: calc(16.66667% - 32px);
 }
 
 .thumbnail-content {
@@ -11,29 +11,29 @@
 }
 
 .thumbnail-link {
-  text-align: left;
+  cursor: pointer;
   line-height: normal;
   position: relative;
-  cursor: pointer;
+  text-align: left;
 }
 .thumbnail-link > img {
-  min-height: inherit;
   background-color: transparent;
   height: 239px;
+  min-height: inherit;
 }
 
 .thumbnail-link > img {
-  min-height: inherit;
-  background-color: transparent;
-  height: 239px;
-  opacity: 1;
-  border-radius: 2px;
-  position: relative;
-  margin-bottom: 12px;
-  z-index: 0;
-  width: 100%;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  background-color: transparent;
+  border-radius: 2px;
+  height: 239px;
+  margin-bottom: 12px;
+  min-height: inherit;
+  opacity: 1;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 100%;
+  z-index: 0;
 }
 
 .thumbnail-link > img:hover {
@@ -43,21 +43,21 @@
 
 .thumbnail-title {
   color: #1e323d;
-  white-space: nowrap;
+  font-size: 0.875rem;
+  letter-spacing: -0.025rem;
+  line-height: 1.375rem;
+  margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
-  font-size: 0.875rem;
-  line-height: 1.375rem;
-  letter-spacing: -0.025rem;
-  margin: 0;
+  white-space: nowrap;
 }
 
 .thumbnail-date {
-  white-space: normal;
+  color: #536067;
   font-size: 0.75rem;
   line-height: 1.3125rem;
   letter-spacing: -0.0125rem;
-  color: #536067;
   margin: 0;
+  white-space: normal;
 }
