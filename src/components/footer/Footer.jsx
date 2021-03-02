@@ -76,11 +76,14 @@ const Footer = () => {
       </div>
       <div className="footer-mentions">
         <div className="footer-left">
-          <select className="footer-left-item" name="language" id="language">
-            {languages.map((language) => (
-              <option value={language}>{language}</option>
-            ))}
-          </select>
+          <div className="footer-left-languages">
+            <span className="footer-left-language-chosen">{languages[0]}</span>
+            <div className="footer-left-languages-store">
+              {languages.map((language) => (
+                <div className="footer-left-language">{language}</div>
+              ))}
+            </div>
+          </div>
           <a
             className="footer-left-item"
             href="https://cdn1.lekiosk.com/Public/Cafeyn/pdfs/legal/fr/legal_lkios.pdf"
