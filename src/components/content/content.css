@@ -4,6 +4,7 @@
 
 .main-content-grid {
   align-items: center;
+  background-color: var(--cafeyn-bcg-color);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

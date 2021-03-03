@@ -90,7 +90,13 @@ const Footer = () => {
               {languages
                 .filter((l) => l !== "🇫🇷 France")
                 .map((language) => (
-                  <div className="footer-left-language">{language}</div>
+                  <div
+                    className={`footer-left-language ${
+                      languages.indexOf(language) % 2 ? "top" : ""
+                    }`}
+                  >
+                    {language}
+                  </div>
                 ))}
             </div>
           </div>

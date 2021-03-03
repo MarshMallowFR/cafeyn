@@ -1,5 +1,5 @@
 section {
-  background-color: #fff;
+  background-color: var(--cafeyn-bcg-color);
   border-bottom: 1px solid var(--cafeyn-border-color);
   display: flex;
   justify-content: space-between;
@@ -39,14 +39,27 @@ section {
 }
 
 .section-nav {
-  padding-top: 23px;
+  margin: 0;
+  padding-top: 37px;
 }
 
 .section-nav > ul {
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: auto;
+  margin: 0;
+  padding: 0;
   position: relative;
+}
+.section-nav > ul > li:last-child > span {
+  margin-right: 0;
+}
+
+.section-nav-active {
+  bottom: -20px;
+  background-color: rgb(103, 131, 155);
+  height: 4px;
+  transition: all 0.3s ease-out;
+  position: absolute;
 }
 
 .section-nav-item {
@@ -57,8 +70,11 @@ section {
   font-weight: 400;
   letter-spacing: 0.03125rem;
   line-height: 1.125rem;
-  margin-left: 40px;
+  margin-right: 40px;
   padding-bottom: 19px;
   text-transform: uppercase;
   white-space: nowrap;
+}
+.section-nav-item:hover {
+  cursor: pointer;
 }

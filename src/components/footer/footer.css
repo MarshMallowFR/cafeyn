@@ -1,5 +1,5 @@
 footer {
-  background-color: #fff;
+  background-color: var(--cafeyn-bcg-color);
   border-top: 1px solid var(--cafeyn-border-color);
   position: relative;
   z-index: 0;
@@ -53,12 +53,30 @@ footer {
   padding: 3px 11px;
 }
 
+.footer-left-language.top {
+  border-bottom: none;
+}
+
 .footer-left-language-chosen {
   color: #536067;
   font-size: 0.875rem;
   line-height: 1.375rem;
+  position: relative;
 }
-.footer-left-language-chosen-icon:hover {
+.footer-left-language-chosen {
+  color: #536067;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  position: relative;
+}
+
+.footer-left-language-chosen-icon {
+  position: absolute;
+  right: -17px;
+  top: 3px;
+}
+.footer-left-language-chosen:hover > .footer-left-language-chosen-icon {
+  top: 0px;
   transform: rotate(-180deg);
   transition: all 0.5s ease-out;
 }
@@ -70,7 +88,7 @@ footer {
 }
 
 .footer-left-languages-store {
-  /* left: -17px; */
+  left: -12px;
   opacity: 0;
   position: absolute;
   text-align: left;
@@ -78,11 +96,11 @@ footer {
   transform: translateY(20px);
   transition: all 0.5s ease-out;
   visibility: hidden;
-  width: 185px;
+  width: 150px;
 }
 
 .footer-left-languages:hover > .footer-left-languages-store {
-  background-color: #fff;
+  background-color: var(--cafeyn-bcg-color);
   opacity: 1;
   transform: translateY(0);
   visibility: visible;
@@ -191,7 +209,7 @@ footer {
 }
 
 .footer-social-icon {
-  background-color: #fff;
+  background-color: var(--cafeyn-bcg-color);
   border: 1px solid var(--cafeyn-border-color);
   border-radius: 27px;
   color: #1e323d;

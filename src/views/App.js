@@ -1,5 +1,5 @@
 import Main from "./Main";
-import Content from "../components/content/Content";
+import Newspapers from "./Newspapers";
 
 import "./App.css";
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App-Root">
       <Main>
-        <Content />
+        <Newspapers />
       </Main>
     </div>
   );

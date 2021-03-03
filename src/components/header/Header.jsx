@@ -31,6 +31,25 @@ const Header = ({ showHeader, setShowHeader }) => {
             <BsSearch className="header-search-icon" />
           </a>
           <div className="header-right">
+            {/* <div class="wrapper">
+              <input
+                onClick={() => {
+                  const bcgColor = document
+                    .querySelector(":root")
+                    .style.getPropertyValue("--cafeyn-bcg-color");
+
+                  document
+                    .querySelector(":root")
+                    .style.setProperty(
+                      "--cafeyn-bcg-color",
+                      bcgColor === "black" ? "white" : "black"
+                    );
+                }}
+                type="checkbox"
+                name="checkbox"
+                class="switch"
+              />
+            </div> */}
             <div className="header-gift">
               <a
                 href="https://www.cafeyn.co/fr/gift/offers"
