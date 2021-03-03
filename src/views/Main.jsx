@@ -10,10 +10,9 @@ import { navCategoriesSection } from "../assets/cafeyn.fixtures";
 const Main = ({ children }) => {
   const [showHeader, setShowHeader] = useState(true);
   // TODO
-  // Taille police globale
-  // Mobile
-  // Animation nav section
   // Select langues à refaire
+  // Animation nav section
+  // Mobile
   return (
     <>
       <Header showHeader={showHeader} setShowHeader={setShowHeader} />

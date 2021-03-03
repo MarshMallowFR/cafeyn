@@ -5,6 +5,11 @@ footer {
   z-index: 0;
 }
 
+.footer-app-redirect > a > img {
+  height: 43px;
+  width: 124px;
+}
+
 .footer-icons {
   align-items: flex-start;
   display: flex;
@@ -18,9 +23,12 @@ footer {
   text-align: center;
 }
 
-.footer-app-redirect > a > img {
-  height: 43px;
-  width: 124px;
+.footer-left {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  padding-left: 34px;
 }
 
 .footer-left-item {
@@ -37,39 +45,60 @@ footer {
   font-weight: 400;
 }
 
-.footer-left-languages {
-  margin-bottom: 0;
-  margin-right: 20px;
-  position: relative;
-  margin-top: -3px;
-  cursor: pointer;
-  display: inline-block;
+.footer-left-language {
+  color: #536067;
+  border: 1px solid #bec2c5;
+  font-size: 14px;
+  line-height: 1.375rem;
+  padding: 3px 11px;
 }
 
 .footer-left-language-chosen {
   color: #536067;
   font-size: 0.875rem;
   line-height: 1.375rem;
-  letter-spacing: -0.0125rem;
 }
-
-.footer-left-languages-store {
-  position: absolute;
-  width: 185px;
-  top: -72px;
-  left: -17px;
-  text-align: left;
-  visibility: hidden;
-  opacity: 0;
-  transform: translateY(20px);
+.footer-left-language-chosen-icon:hover {
+  transform: rotate(-180deg);
   transition: all 0.5s ease-out;
 }
 
-.footer-left-languages:hover {
+.footer-left-languages {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.footer-left-languages-store {
+  /* left: -17px; */
+  opacity: 0;
+  position: absolute;
+  text-align: left;
+  top: -71px;
+  transform: translateY(20px);
+  transition: all 0.5s ease-out;
+  visibility: hidden;
+  width: 185px;
+}
+
+.footer-left-languages:hover > .footer-left-languages-store {
+  background-color: #fff;
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.footer-left-languages-visible {
+  align-items: center;
+  display: flex;
+  margin-right: 23px;
+}
+
+/* .footer-left-languages:hover {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
-}
+} */
 
 .footer-logo {
   margin-bottom: 65px;

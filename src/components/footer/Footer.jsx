@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
+import { BiChevronDown } from "react-icons/bi";
 
 import Logo from "../../assets/img/cafeyn.svg";
 // import CafeynLogo from "../assets/img/cafeynLogo2.svg";
@@ -77,11 +78,20 @@ const Footer = () => {
       <div className="footer-mentions">
         <div className="footer-left">
           <div className="footer-left-languages">
-            <span className="footer-left-language-chosen">{languages[0]}</span>
+            <div className="footer-left-languages-visible">
+              <span className="footer-left-language-chosen">
+                {languages[0]}
+                <span className="footer-left-language-chosen-icon">
+                  <BiChevronDown />
+                </span>
+              </span>
+            </div>
             <div className="footer-left-languages-store">
-              {languages.map((language) => (
-                <div className="footer-left-language">{language}</div>
-              ))}
+              {languages
+                .filter((l) => l !== "🇫🇷 France")
+                .map((language) => (
+                  <div className="footer-left-language">{language}</div>
+                ))}
             </div>
           </div>
           <a
