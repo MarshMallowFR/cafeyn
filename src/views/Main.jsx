@@ -9,6 +9,7 @@ const Main = ({ children }) => {
   const [showHeader, setShowHeader] = useState(true);
   // TODO
   // Mobile
+  // ACcessibilité
   return (
     <>
       <Header showHeader={showHeader} setShowHeader={setShowHeader} />

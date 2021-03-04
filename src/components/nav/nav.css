@@ -23,12 +23,6 @@
   z-index: 2;
 }
 
-@media screen and (min-width: 1550px) {
-  .main-nav-content {
-    width: 76%;
-  }
-}
-
 .main-nav-content {
   background-color: var(--cafeyn-bcg-color);
   display: flex;
@@ -38,6 +32,18 @@
   padding: 4px 45px;
   overflow-x: auto;
   width: 75%;
+}
+@media screen and (min-width: 1550px) {
+  .main-nav-content {
+    width: 76%;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1025px) {
+  .main-nav-content {
+    padding: 4px 0;
+    width: 100%;
+  }
 }
 
 .main-nav-content > a:nth-child(1):hover > .main-nav-item-text {

@@ -61,3 +61,17 @@
   margin: 0;
   white-space: normal;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .thumbnail {
+    margin-top: 64px;
+    width: calc(16.66667% - 16px);
+    flex: 0 0 auto;
+    margin-left: 16px;
+  }
+
+  .thumbnail-link > img {
+    height: 183px;
+    width: 136px;
+  }
+}

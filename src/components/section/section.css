@@ -78,3 +78,9 @@ section {
 .section-nav-item:hover {
   cursor: pointer;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .section-nav {
+    margin-right: 23px;
+  }
+}

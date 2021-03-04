@@ -124,6 +124,18 @@ header {
   width: calc(33.33333% - 40px);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .header-search {
+    margin-left: 0;
+  }
+
+  .header-search > p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
 .header-search > p {
   color: var(--cafeyn-grey-color);
   display: block;
