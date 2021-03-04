@@ -12,16 +12,10 @@
 }
 
 :root {
-  --cafeyn-grey-color: #536067;
-  --cafeyn-border-color: #ececec;
-  --cafeyn-loginRegister-color: #fedc84;
   --cafeyn-bcg-color: white;
-}
-
-.App-Root {
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Soleil";
+  --cafeyn-border-color: #ececec;
+  --cafeyn-grey-color: #536067;
+  --cafeyn-loginRegister-color: #fedc84;
 }
 
 a {
@@ -33,19 +27,25 @@ ul {
 }
 
 #main-section {
-  margin-top: 81px;
   background-color: var(--cafeyn-bcg-color);
+  margin-top: 81px;
   min-height: calc(-51px + 100vh);
 }
 
+.App-Root {
+  box-sizing: border-box;
+  font-family: "Soleil";
+  margin: 0;
+}
+
 .hightLight-content {
-  transition: all 0.5s ease-out;
-  position: absolute;
-  width: 100%;
-  height: 100%;
   background-color: rgba(22, 23, 31, 0);
-  top: 0;
+  height: 100%;
   left: 0;
-  z-index: 10000;
   pointer-events: none;
+  position: absolute;
+  top: 0;
+  transition: all 0.5s ease-out;
+  width: 100%;
+  z-index: 10000;
 }

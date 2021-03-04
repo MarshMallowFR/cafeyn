@@ -10,6 +10,15 @@
   padding-left: 2px;
 }
 
+.thumbnail-date {
+  color: #536067;
+  font-size: 0.75rem;
+  line-height: 1.3125rem;
+  letter-spacing: -0.0125rem;
+  margin: 0;
+  white-space: normal;
+}
+
 .thumbnail-link {
   cursor: pointer;
   line-height: normal;
@@ -53,25 +62,27 @@
   white-space: nowrap;
 }
 
-.thumbnail-date {
-  color: #536067;
-  font-size: 0.75rem;
-  line-height: 1.3125rem;
-  letter-spacing: -0.0125rem;
-  margin: 0;
-  white-space: normal;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .thumbnail {
-    margin-top: 64px;
-    width: calc(16.66667% - 16px);
     flex: 0 0 auto;
     margin-left: 16px;
+    margin-top: 64px;
+    width: calc(16.66667% - 16px);
   }
 
   .thumbnail-link > img {
     height: 183px;
     width: 136px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .thumbnail {
+    margin: 18% 13% -9% 4%;
+    width: 30%;
+  }
+  .thumbnail-link > img {
+    height: 235px;
+    width: 177px;
   }
 }

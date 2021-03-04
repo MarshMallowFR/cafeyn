@@ -4,7 +4,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { BiChevronDown } from "react-icons/bi";
 
 import Logo from "../../assets/img/cafeyn.svg";
-// import CafeynLogo from "../assets/img/cafeynLogo2.svg";
+import CafeynLogo from "../../assets/img/cafeynLogo.svg";
 import { navCategoriesFooter, languages } from "../../assets/cafeyn.fixtures";
 
 import "./footer.css";
@@ -12,9 +12,13 @@ import "./footer.css";
 const Footer = () => {
   return (
     <footer>
-      {/* TODO logo en mobile <img src={CafeynLogo} alt="cafeyn logo" /> */}
       <div className="footer-main">
         <div className="footer-nav">
+          <img
+            className="footer-logo-mobile"
+            src={CafeynLogo}
+            alt="cafeyn logo"
+          />
           <a className="footer-logo" href="https://www.cafeyn.co/fr/newsstand">
             <img src={Logo} alt="logo cafeyn" />
           </a>
@@ -24,9 +28,7 @@ const Footer = () => {
               <ul>
                 {categories.map((categorie) => (
                   <li>
-                    <a href="" className="footer-nav-categorie">
-                      {categorie}
-                    </a>
+                    <div className="footer-nav-categorie">{categorie}</div>
                   </li>
                 ))}
               </ul>
@@ -39,7 +41,7 @@ const Footer = () => {
             <div className="footer-app-redirect">
               <a href="https://apps.apple.com/fr/app/lekiosk-digital-newsstand/id626703984?l=fr">
                 <img
-                  src="https://www.aixlesbains.fr/var/aixinter/storage/images/media/images/cadre-de-vie/technologie/logo-disponible-sir-app-store/477804-1-fre-FR/Logo-Disponible-sir-App-store_full_image.png"
+                  src="https://cscdouessin.centres-sociaux.fr/files/2020/05/Logo-App-Store.png"
                   alt="logo-available-apple"
                 />
               </a>
