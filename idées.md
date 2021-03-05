@@ -8,7 +8,6 @@
 
 - Mettre en gras les items actifs sur la section
 - Améliorations responsive :
-  - Footer à revoir sur l'ipad version portrait
   - Animations footer sur mobile
 
 # Commentaires

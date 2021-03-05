@@ -235,11 +235,37 @@ footer {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer-app-redirect {
+    display: flex;
+  }
+  .footer-icons {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  .footer-logo-mobile {
+    background-color: white;
+    display: block;
+    height: 44px;
+    left: calc(50% - 15px);
+    position: absolute;
+    top: -23px;
+  }
+  .footer-logo {
+    display: none;
+  }
   .footer-main {
-    padding: 0 32px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footer-mentions {
+    justify-content: center;
+    padding-top: 25px;
   }
 }
+
 @media screen and (max-width: 767px) {
   .footer-icons {
     align-items: center;
@@ -260,7 +286,7 @@ footer {
     background-color: white;
     display: block;
     height: 44px;
-    left: 43%;
+    left: calc(50% - 15px);
     position: absolute;
     top: -23px;
   }

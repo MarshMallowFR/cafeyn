@@ -62,17 +62,27 @@
   white-space: nowrap;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (max-width: 1279px) {
   .thumbnail {
     flex: 0 0 auto;
     margin-left: 16px;
     margin-top: 64px;
-    width: calc(16.66667% - 16px);
   }
 
   .thumbnail-link > img {
     height: 183px;
     width: 136px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .thumbnail {
+    width: calc(16.66667% - 16px);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .thumbnail {
+    width: calc(20.66667% - 16px);
   }
 }
 
