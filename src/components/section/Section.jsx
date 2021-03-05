@@ -3,10 +3,17 @@ import PropTypes from "prop-types";
 
 import "./section.css";
 
-const Section = ({ title, description, navItems, setSubCategorie }) => {
+const Section = ({
+  title,
+  description,
+  navItems,
+  setSubCategorie,
+  subCategorie,
+}) => {
   const [style, setStyle] = useState({});
 
   const handleClick = (e, item) => {
+    console.log(e.target);
     setStyle({
       width: e.target.offsetWidth,
       left: e.target.offsetLeft,
@@ -37,6 +44,7 @@ const Section = ({ title, description, navItems, setSubCategorie }) => {
               <span
                 className="section-nav-item"
                 onClick={(e) => handleClick(e, item)}
+                style={{ fontWeight: subCategorie === item ? "bold" : "" }}
               >
                 {item}
               </span>
@@ -53,6 +61,7 @@ Section.propTypes = {
   description: PropTypes.string.isRequired,
   navItems: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
   setSubCategorie: PropTypes.func.isRequired,
+  subCategorie: PropTypes.string.isRequired,
 };
 
 export default Section;

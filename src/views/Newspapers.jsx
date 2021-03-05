@@ -14,6 +14,7 @@ const Newspapers = () => {
         description={"L'actu très très chaud"}
         navItems={navCategoriesSection}
         setSubCategorie={setSubCategorie}
+        subCategorie={subCategorie}
       />
       <Content subCategorie={subCategorie} />
     </>

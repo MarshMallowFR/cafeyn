@@ -6,7 +6,6 @@
 
 # Pas eu le temps de réaliser
 
-- Mettre en gras les items actifs sur la section
 - Améliorations responsive :
   - Animations footer sur mobile
 
