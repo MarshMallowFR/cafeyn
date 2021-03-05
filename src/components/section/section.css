@@ -79,10 +79,7 @@ section {
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .section-nav {
-    margin-right: 23px;
-  }
+@media screen and (max-width: 1023px) {
   section {
     flex-direction: column;
     margin-top: 145px;
@@ -92,16 +89,13 @@ section {
     padding-top: 72px;
   }
 }
-@media screen and (max-width: 767px) {
-  section {
-    flex-direction: column;
-    margin-top: 145px;
-    border-bottom: none;
-    max-width: 306px;
-    margin-right: 35px;
-    padding-top: 72px;
-  }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .section-nav {
+    margin-right: 23px;
+  }
+}
+@media screen and (max-width: 767px) {
   .section-main {
     margin-bottom: 0;
   }

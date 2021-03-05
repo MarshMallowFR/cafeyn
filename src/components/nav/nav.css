@@ -109,17 +109,6 @@
   width: 100%;
 }
 
-@media screen and (min-width: 1550px) {
-  .main-nav-content {
-    width: 76%;
-  }
-}
-@media screen and (min-width: 1023px) {
-  .header-right-login-mobile {
-    display: inherit;
-  }
-}
-
 @media screen and (min-width: 767px) and (max-width: 1025px) {
   .main-nav-content {
     padding: 4px 0;
@@ -148,5 +137,17 @@
     position: relative;
     top: 0;
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 1550px) {
+  .main-nav-content {
+    width: 76%;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .header-right-login-mobile {
+    display: inherit;
   }
 }
